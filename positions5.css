@@ -1,0 +1,151 @@
+
+
+/*Por aqui veremos dois exemplos, um do <position:absolute> e outro do <position:fixed> */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+	width:960px;
+	margin:0px auto;
+	height:auto;
+}
+
+.banner{
+	max-width:960px;
+	max-height:350px;
+	overflow:hidden;
+	margin:0px auto;
+	position:relative;
+}
+
+h3{
+	width:200px;
+    float: left;
+	text-align:center;
+	color:#fff;
+	border:2px solid blue;
+	border-radius:10px;
+	font-family:monospace;
+	background-color: lightyellow;
+    color: brown;
+	position:relative;
+	margin:10px 10px;
+	padding:4px;
+}
+
+.caixa1{
+	width:100%;
+	position:relative;
+}
+
+.sc1{
+	float:left;
+	width:29%;
+	margin:1%;
+	padding:1%;
+	border:1px solid purple;
+	font-family:calibri;
+	line-height:1.5em;
+	text-align:center;
+	background:#eee;
+	position:relative;
+	top:6px;
+}
+
+.sc2{
+	float:left;
+	width:29%;
+	margin:1%;
+	padding:1%;
+	border:1px solid purple;
+	font-family:calibri;
+	line-height:1.5em;
+	text-align:center;
+	background:#eee;
+	position:relative;
+	top:18px;
+}
+
+.sc3{
+	float:left;
+	width:29%;
+	margin:1%;
+	padding:1%;
+	border:1px solid purple;
+	font-family:calibri;
+	line-height:1.5em;
+	text-align:center;
+	background:#eee;
+	position:relative;
+	top:36px;
+}
+
+.caixa1:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+.head{
+	color:darkblue;
+	margin:25px 25px;
+	text-shadow:4px 4px 4px;
+	font-family:cursive;
+}
+
+.prezento{
+	margin:15px;
+	text-align:justify;
+	font-family:sans-serif;
+	letter-spacing:2px;
+    line-height: 20px;
+}
+
+/*Ver que, nesse MODO de se usar a TAG <nav> (com FLOAT, em vez da Propriedade INLINE), sua altura automaticamente colapsa. Logo,
+para se trabalhar dessa maneira, é preciso, tb, corrigir o "Bloco-LI", via "comando"-> CLEAR. */
+
+nav{
+	width:960px;
+	height:auto;
+	margin:0px auto;
+	background-color: black;
+	position:fixed;
+	top:0px;
+}
+
+nav:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+nav ul {
+  margin:0px auto;
+  list-style-type: none;
+}
+
+nav ul li {
+	float:right;
+	width: auto;
+    height:auto;
+	margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+	font-family:sans-serif;
+    font-style: italic;
+	font-size:20px;
+	color:green;
+}
+
+.space{
+	line-height:60px;
+	letter-spacing:5px;
+}
+
+
+
