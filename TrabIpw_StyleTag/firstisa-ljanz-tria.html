@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Work_Ipw:Fixed_Page1</title>
+  <!--
+  <link rel="stylesheet" href="firstisa-ljanz-ipfs.css">
+  -->
+</head>
+<body background="imgs/mancha_wall.jpg">
+  
+  <header style="margin-top:50px">
+      <table align="center" color="blue" border="2px solid black">
+      <tr>
+        <td style="font-size:32px; padding:12px"><a href="firstisa-ljanz-ipfs.html">HomePage</a></td>
+        <td style="font-size:32px; padding:12px"><a href="firstisa-ljanz-dua.html">HistóricoTech</a></td>
+        <td style="font-size:32px; padding:12px"><a href="#">PhotoGallery</a></td>
+        <td style="font-size:32px; padding:12px"><a href="firstisa-ljanz-kvara.html">Contact US</a></td>
+      </tr>
+    </table>
+  </header>
+    <br>
+      <h1 style="font-family:fantasy; color:green; padding:10px"></h1>
+    
+      <figure align="center">
+        <img src="" name="slide" width="600px" height="460px">
+      </figure>
+        <br>
+    
+      <script>
+        var i=0;
+        var timer=2600;
+        var images=[];
+        //--------
+        
+        images[0]='gallery/juan_benet.jpg';
+        images[1]='gallery/filecoin.jpg'
+        images[2]='gallery/ethereum-platform.jpg'
+        images[3]='gallery/monero.jpg'
+        images[4]='gallery/types_web.jpg'
+        //--------
+        
+        function trocaimg(){
+          document.slide.src = images[i];
+        
+        
+        if (i < images.length -1){
+          i++;
+        }else{
+          i=0;
+        }
+        
+          setTimeout("trocaimg()", timer);
+          }
+        
+        window.onload = trocaimg();
+      </script>
+  </body>
+</html>
